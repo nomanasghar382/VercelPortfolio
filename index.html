@@ -1,324 +1,227 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Noman Asghar — Full-Stack Web Developer | Hire Me</title>
-<meta name="description" content="Noman Asghar — Full-stack web developer available for freelance projects. React, Node.js, APIs, and polished interfaces that convert.">
-<meta name="author" content="Noman Asghar">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXORA AI — Cinematic Luxury Commerce</title>
+  <meta name="description" content="NEXORA AI is a futuristic luxury e-commerce showroom with interactive 3D products, cinematic shopping, and premium AI recommendations.">
+  <meta name="author" content="Noman Asghar">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<div class="grain" aria-hidden="true"></div>
-
-<nav id="navbar">
-  <div class="nav-brand">
-    <img src="assets/MY best photo.jpeg" alt="Noman Asghar" class="nav-avatar" width="42" height="42">
-    <div class="logo">Noman<span>.</span>dev</div>
+  <div class="ambient-field" aria-hidden="true">
+    <span class="aurora aurora-one"></span>
+    <span class="aurora aurora-two"></span>
+    <span class="aurora aurora-three"></span>
+    <span class="light-ray ray-one"></span>
+    <span class="light-ray ray-two"></span>
   </div>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#process">Process</a></li>
-  </ul>
-  <div class="nav-actions">
-    <a href="assets/my resume photo.jpeg" target="_blank" rel="noopener" class="nav-resume">Resume ↗</a>
-    <a href="#contact" class="nav-cta">Hire me</a>
-    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
+  <div class="noise" aria-hidden="true"></div>
+
+  <nav class="nav-shell" id="navbar">
+    <a class="brand-mark magnetic" href="#hero" aria-label="NEXORA AI home">
+      <span class="brand-orb"></span>
+      <span>NEXORA<span>AI</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="#showroom">Showroom</a>
+      <a href="#story">Experience</a>
+      <a href="#checkout">Checkout</a>
+      <a href="#contact">Concierge</a>
+    </div>
+    <button class="cart-button magnetic" id="cartButton" type="button" aria-label="Open cart">
+      <span class="cart-icon">Cart</span>
+      <span class="cart-count" id="cartCount">0</span>
     </button>
-  </div>
-</nav>
+  </nav>
 
-<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#process">Process</a>
-  <a href="assets/my resume photo.jpeg" target="_blank" rel="noopener">Resume</a>
-  <a href="#contact">Contact</a>
-</div>
+  <main>
+    <section class="hero-section" id="hero">
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero-content reveal-depth">
+        <p class="eyebrow"><span></span> Phase 1 cinematic commerce system</p>
+        <h1>Luxury products presented like keynote reveals.</h1>
+        <p class="hero-copy">A futuristic showroom for AI-powered commerce: floating 3D products, cursor-aware lighting, cinematic reveal states, and cart interactions that feel physical instead of ordinary.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary magnetic" href="#showroom">Enter showroom</a>
+          <a class="btn btn-secondary magnetic" href="#story">View motion system</a>
+        </div>
+        <div class="hero-metrics" aria-label="Experience highlights">
+          <span><strong>3D</strong> procedural models</span>
+          <span><strong>60 FPS</strong> GPU motion</span>
+          <span><strong>AI</strong> luxury guidance</span>
+        </div>
+      </div>
+      <aside class="hero-panel reveal-depth" aria-label="Showroom status">
+        <div class="panel-glow"></div>
+        <p>Live environment</p>
+        <strong>HDRI-inspired reflections</strong>
+        <span>Cursor light tracking enabled</span>
+        <span>Soft-shadow stage active</span>
+      </aside>
+      <div class="scroll-cue" aria-hidden="true">Scroll <span></span></div>
+    </section>
 
-<section id="hero">
-  <canvas id="hero-canvas"></canvas>
-  <div class="hero-grid">
-    <div class="hero-inner">
-      <div class="availability"><span class="pulse-dot"></span> Open for freelance work</div>
-      <h1 class="hero-title">I build <span class="accent">premium</span> web products clients <span class="accent2">pay for</span>.</h1>
-      <div class="role-line">I'm a <span class="typed" id="typed"></span></div>
-      <p class="hero-desc">Computer Science undergrad and full-stack developer. I design and ship fast, polished websites and apps — from stunning frontends to APIs and databases — built to impress clients and grow your business.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Start a project →</a>
-        <a href="assets/my resume photo.jpeg" target="_blank" rel="noopener" class="btn btn-resume">View Resume ↗</a>
-        <a href="#projects" class="btn btn-ghost">See my work</a>
+    <section class="showroom-section" id="showroom">
+      <div class="section-heading reveal-depth">
+        <p class="eyebrow"><span></span> Interactive luxury objects</p>
+        <h2>Every card is a living 3D product stage.</h2>
+        <p>Hover to trigger lift, camera zoom, spotlight, glowing pedestal rings, animated specs, price counters, rating stars, and elegant purchase controls.</p>
       </div>
-      <div class="hero-trust">
-        <span><strong>3+</strong> years coding</span>
-        <span><strong>10+</strong> technologies</span>
-        <span><strong>100%</strong> client-focused delivery</span>
-      </div>
-    </div>
-    <div class="hero-photo-wrap">
-      <div class="photo-ring">
-        <img src="assets/MY best photo.jpeg" alt="Noman Asghar — Full-Stack Web Developer" class="hero-photo" width="380" height="380">
-      </div>
-      <div class="photo-badge">
-        <strong>Noman Asghar</strong>
-        Full-Stack Developer<br>
-        COMSATS · FA24-BCS-043
-      </div>
-    </div>
-  </div>
-  <div class="scroll-hint"><span class="bar"></span> SCROLL</div>
-</section>
 
-<div class="marquee-wrap" aria-hidden="true">
-  <div class="marquee-track">
-    <span>React · <em>Node.js</em> · Express · MySQL · MongoDB ·</span>
-    <span>HTML5 · <em>CSS3</em> · JavaScript · REST APIs ·</span>
-    <span>UI/UX · <em>Three.js</em> · GSAP · Git · Deployment ·</span>
-    <span>Freelance Ready · <em>Available Now</em> · Abbottabad, PK ·</span>
-    <span>React · <em>Node.js</em> · Express · MySQL · MongoDB ·</span>
-    <span>HTML5 · <em>CSS3</em> · JavaScript · REST APIs ·</span>
-    <span>UI/UX · <em>Three.js</em> · GSAP · Git · Deployment ·</span>
-    <span>Freelance Ready · <em>Available Now</em> · Abbottabad, PK ·</span>
-  </div>
-</div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card reveal-depth" data-product="0">
+          <div class="card-light"></div>
+          <div class="model-stage">
+            <canvas class="product-canvas" aria-label="Interactive 3D model of Aureon X1 headphones"></canvas>
+            <div class="pedestal-ring"></div>
+            <div class="particle-field" aria-hidden="true"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-kicker">AI recommended</div>
+            <h3>Aureon X1</h3>
+            <p>Adaptive spatial headphones with brushed alloy and memory leather.</p>
+            <div class="spec-list">
+              <span>40h battery</span>
+              <span>Titanium drivers</span>
+              <span>Glass touch crown</span>
+            </div>
+            <div class="product-meta">
+              <span class="price" data-price="1299">$0</span>
+              <span class="stars" data-rating="5">★★★★★</span>
+            </div>
+            <div class="product-actions">
+              <button class="btn-card inspect-btn magnetic" type="button">Cinematic reveal</button>
+              <button class="btn-card add-btn magnetic" type="button">Add to cart</button>
+            </div>
+          </div>
+        </article>
 
-<section id="about">
-  <div class="about-grid">
-    <div class="reveal">
-      <div class="section-tag">01 — About</div>
-      <h2 class="section-title">From lecture halls<br>to live servers.</h2>
-      <div class="about-copy" style="margin-top:28px;">
-        <p>I'm <strong>Noman Asghar</strong>, a Computer Science student (Reg. FA24-BCS-043) at COMSATS University Abbottabad — focused on turning academic skills into real products that businesses and clients can use.</p>
-        <p>I work across the full stack — <strong>HTML, CSS, JavaScript, React, Node.js, Express</strong>, and databases like <strong>MySQL, PostgreSQL, and MongoDB</strong> — so you get one developer who can take your idea from wireframe to production without gaps.</p>
-        <p>My goal: build a respected international freelancing career and launch my own software products. This portfolio is proof of what I ship.</p>
-      </div>
-      <a href="assets/Noman-Asghar-Resume.html" target="_blank" rel="noopener" class="btn btn-resume" style="margin-top:24px;">Download Professional Resume →</a>
-    </div>
-    <div class="stat-grid reveal">
-      <div class="stat-card"><div class="stat-num" data-count="3">0+</div><div class="stat-label">Years coding & studying CS fundamentals</div></div>
-      <div class="stat-card"><div class="stat-num" data-count="10">0+</div><div class="stat-label">Technologies in active toolkit</div></div>
-      <div class="stat-card"><div class="stat-num">100%</div><div class="stat-label">Commitment to clean, maintainable code</div></div>
-      <div class="stat-card"><div class="stat-num">24/7</div><div class="stat-label">Drive to keep learning & shipping</div></div>
-    </div>
-  </div>
-</section>
+        <article class="product-card reveal-depth" data-product="1">
+          <div class="card-light"></div>
+          <div class="model-stage">
+            <canvas class="product-canvas" aria-label="Interactive 3D model of Prism Fold phone"></canvas>
+            <div class="pedestal-ring"></div>
+            <div class="particle-field" aria-hidden="true"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-kicker">Smart match 98%</div>
+            <h3>Prism Fold</h3>
+            <p>Glass-and-ceramic AI phone with holographic display surfaces.</p>
+            <div class="spec-list">
+              <span>Neural camera</span>
+              <span>Liquid glass</span>
+              <span>1TB storage</span>
+            </div>
+            <div class="product-meta">
+              <span class="price" data-price="2199">$0</span>
+              <span class="stars" data-rating="5">★★★★★</span>
+            </div>
+            <div class="product-actions">
+              <button class="btn-card inspect-btn magnetic" type="button">Cinematic reveal</button>
+              <button class="btn-card add-btn magnetic" type="button">Add to cart</button>
+            </div>
+          </div>
+        </article>
 
-<section id="services">
-  <div class="section-head reveal">
-    <div class="section-tag">02 — Services</div>
-    <h2 class="section-title">Packages built to earn you results.</h2>
-    <p class="section-sub">Clear scopes, fair pricing, and professional delivery — whether you need a landing page, full web app, or ongoing development support.</p>
-  </div>
-  <div class="services-grid">
-    <div class="service-card reveal">
-      <div class="service-icon">🌐</div>
-      <div class="service-name">Starter Site</div>
-      <div class="service-price">From $150 <small>/ project</small></div>
-      <p class="service-desc">Perfect for portfolios, landing pages, and small business sites that need to look premium and load fast.</p>
-      <ul class="service-list">
-        <li>Up to 5 responsive pages</li>
-        <li>Modern UI with animations</li>
-        <li>Mobile-first design</li>
-        <li>Contact form integration</li>
-        <li>1 round of revisions</li>
-      </ul>
-      <a href="#contact" class="btn btn-ghost" style="width:100%;justify-content:center;">Get a quote →</a>
-    </div>
-    <div class="service-card featured reveal">
-      <span class="service-badge">Popular</span>
-      <div class="service-icon">⚡</div>
-      <div class="service-name">Full-Stack App</div>
-      <div class="service-price">From $450 <small>/ project</small></div>
-      <p class="service-desc">Complete web applications with frontend, backend API, authentication, and database — ready to launch.</p>
-      <ul class="service-list">
-        <li>React or vanilla frontend</li>
-        <li>Node.js + Express REST API</li>
-        <li>MySQL or MongoDB database</li>
-        <li>User auth & admin panel</li>
-        <li>Deployment support included</li>
-      </ul>
-      <a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;">Start this package →</a>
-    </div>
-    <div class="service-card reveal">
-      <div class="service-icon">🤝</div>
-      <div class="service-name">Monthly Retainer</div>
-      <div class="service-price">From $300 <small>/ month</small></div>
-      <p class="service-desc">Ongoing development, bug fixes, feature updates, and priority support for growing businesses.</p>
-      <ul class="service-list">
-        <li>Dedicated dev hours each month</li>
-        <li>Priority bug fixes</li>
-        <li>Feature additions & improvements</li>
-        <li>Performance optimization</li>
-        <li>Direct communication channel</li>
-      </ul>
-      <a href="#contact" class="btn btn-ghost" style="width:100%;justify-content:center;">Let's talk →</a>
-    </div>
-  </div>
-</section>
+        <article class="product-card reveal-depth" data-product="2">
+          <div class="card-light"></div>
+          <div class="model-stage">
+            <canvas class="product-canvas" aria-label="Interactive 3D model of Chronos Air watch"></canvas>
+            <div class="pedestal-ring"></div>
+            <div class="particle-field" aria-hidden="true"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-kicker">Concierge pick</div>
+            <h3>Chronos Air</h3>
+            <p>Sapphire wearable with precision steel, fabric loop, and AI vitals.</p>
+            <div class="spec-list">
+              <span>Sapphire lens</span>
+              <span>Steel body</span>
+              <span>Bio sensors</span>
+            </div>
+            <div class="product-meta">
+              <span class="price" data-price="899">$0</span>
+              <span class="stars" data-rating="5">★★★★★</span>
+            </div>
+            <div class="product-actions">
+              <button class="btn-card inspect-btn magnetic" type="button">Cinematic reveal</button>
+              <button class="btn-card add-btn magnetic" type="button">Add to cart</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<section id="skills">
-  <div class="section-head reveal">
-    <div class="section-tag">03 — Skills</div>
-    <h2 class="section-title">The stack I build with.</h2>
-    <p class="section-sub">Comfortable on either side of the request — designing what users see, and engineering what makes it work.</p>
-  </div>
-  <div class="skills-wrap">
-    <div class="skill-card reveal" class="skill-card reveal skill-coral">
-      <span class="skill-icon">🎨</span>
-      <div class="skill-name">Frontend Development</div>
-      <div class="skill-desc">Responsive, accessible interfaces built with modern CSS and JavaScript — animated and fast.</div>
-      <div class="skill-tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">React</span></div>
-    </div>
-    <div class="skill-card reveal" class="skill-card reveal skill-violet">
-      <span class="skill-icon">⚙️</span>
-      <div class="skill-name">Backend Development</div>
-      <div class="skill-desc">REST APIs, authentication, and server logic built with Node.js and Express.</div>
-      <div class="skill-tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">REST APIs</span><span class="tag">Auth</span></div>
-    </div>
-    <div class="skill-card reveal" class="skill-card reveal skill-sun">
-      <span class="skill-icon">🗄️</span>
-      <div class="skill-name">Databases</div>
-      <div class="skill-desc">Schema design and query optimization across relational and NoSQL systems.</div>
-      <div class="skill-tags"><span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">MongoDB</span></div>
-    </div>
-    <div class="skill-card reveal" class="skill-card reveal skill-mint">
-      <span class="skill-icon">🧩</span>
-      <div class="skill-name">Software Engineering</div>
-      <div class="skill-desc">OOP, data structures, and design patterns applied to real, maintainable codebases.</div>
-      <div class="skill-tags"><span class="tag">Java</span><span class="tag">OOP</span><span class="tag">Design Patterns</span></div>
-    </div>
-    <div class="skill-card reveal" class="skill-card reveal skill-coral">
-      <span class="skill-icon">📱</span>
-      <div class="skill-name">UI / UX Thinking</div>
-      <div class="skill-desc">Designing flows around what users need, not just what's technically possible.</div>
-      <div class="skill-tags"><span class="tag">Figma</span><span class="tag">Wireframing</span><span class="tag">UX</span></div>
-    </div>
-    <div class="skill-card reveal" class="skill-card reveal skill-violet">
-      <span class="skill-icon">🚀</span>
-      <div class="skill-name">Deployment & Tools</div>
-      <div class="skill-desc">Git workflows, cloud basics, and the everyday tools that ship software professionally.</div>
-      <div class="skill-tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Cloud</span></div>
-    </div>
-  </div>
-</section>
+    <section class="story-section" id="story">
+      <div class="story-copy reveal-depth">
+        <p class="eyebrow"><span></span> Apple-style interaction language</p>
+        <h2>Scroll becomes a showroom camera move.</h2>
+        <p>Products reveal from depth with parallax fog, glass distortion, magnetic controls, living backgrounds, and sequential specification choreography.</p>
+      </div>
+      <div class="story-steps">
+        <div class="story-card reveal-depth"><span>01</span><strong>Cursor intelligence</strong><p>Camera, product tilt, and dynamic light react to pointer movement.</p></div>
+        <div class="story-card reveal-depth"><span>02</span><strong>Hover theater</strong><p>Spotlight, particles, pedestal glow, specs, price, and stars animate in sequence.</p></div>
+        <div class="story-card reveal-depth"><span>03</span><strong>Click reveal</strong><p>The product flies toward the camera and lands in an immersive detail showroom.</p></div>
+      </div>
+    </section>
 
-<section id="projects">
-  <div class="section-head reveal">
-    <div class="section-tag">04 — Projects</div>
-    <h2 class="section-title">Selected work.</h2>
-    <p class="section-sub">Academic builds and self-initiated projects — each designed to solve real problems with production-quality code.</p>
-  </div>
-  <div class="project-list">
-    <div class="project-row reveal">
-      <div class="project-num">01</div>
-      <div>
-        <div class="project-name">Campus<span class="pname-accent">Connect</span></div>
-        <div class="project-desc">Student portal for managing courses, attendance, and announcements — React frontend with Node/Express API on MySQL.</div>
+    <section class="checkout-section" id="checkout">
+      <div class="checkout-shell reveal-depth">
+        <div>
+          <p class="eyebrow"><span></span> Premium checkout preview</p>
+          <h2>Checkout feels like a private purchase ceremony.</h2>
+          <p>Phase 1 includes a cinematic checkout preview with animated progress, sliding payment cards, and a glowing success wave.</p>
+        </div>
+        <div class="checkout-demo" id="checkoutDemo">
+          <div class="checkout-progress"><span></span></div>
+          <div class="payment-card card-one">NEXORA BLACK</div>
+          <div class="payment-card card-two">AI VERIFIED</div>
+          <button class="btn btn-primary magnetic" id="checkoutButton" type="button">Preview success</button>
+          <div class="success-wave" aria-hidden="true"></div>
+        </div>
       </div>
-      <div class="project-meta">
-        <div class="project-stack"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MySQL</span></div>
-        <a href="#contact" class="project-link">Request demo →</a>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="reveal-depth">
+        <p class="eyebrow"><span></span> Luxury AI commerce</p>
+        <h2>Ready for Phase 2: real assets, GLB models, backend catalog, and AI recommendations.</h2>
+        <p>Phase 1 establishes the premium visual foundation and interaction language for the full NEXORA AI platform.</p>
       </div>
-    </div>
-    <div class="project-row reveal">
-      <div class="project-num">02</div>
-      <div>
-        <div class="project-name">Task<span class="pname-accent">Flow</span></div>
-        <div class="project-desc">Freelancer task & client tracker with auth, drag-and-drop boards, and MongoDB-backed API.</div>
-      </div>
-      <div class="project-meta">
-        <div class="project-stack"><span class="tag">JavaScript</span><span class="tag">Express</span><span class="tag">MongoDB</span></div>
-        <a href="#contact" class="project-link">Request demo →</a>
-      </div>
-    </div>
-    <div class="project-row reveal">
-      <div class="project-num">03</div>
-      <div>
-        <div class="project-name">Pixel<span class="pname-accent">Storefront</span></div>
-        <div class="project-desc">Responsive e-commerce frontend with animated product cards, cart logic, and optimized checkout flow.</div>
-      </div>
-      <div class="project-meta">
-        <div class="project-stack"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span></div>
-        <a href="#contact" class="project-link">Request demo →</a>
-      </div>
-    </div>
-    <div class="project-row reveal">
-      <div class="project-num">04</div>
-      <div>
-        <div class="project-name">This <span class="pname-accent">Portfolio</span></div>
-        <div class="project-desc">The site you're viewing — hand-coded with Three.js, GSAP, premium UI, and zero templates.</div>
-      </div>
-      <div class="project-meta">
-        <div class="project-stack"><span class="tag">Three.js</span><span class="tag">GSAP</span><span class="tag">CSS3</span></div>
-        <a href="assets/my resume photo.jpeg" target="_blank" rel="noopener" class="project-link">View resume →</a>
+    </section>
+  </main>
+
+  <div class="detail-showroom" id="detailShowroom" aria-hidden="true">
+    <div class="detail-backdrop"></div>
+    <button class="detail-close magnetic" id="detailClose" type="button" aria-label="Close product showroom">Close</button>
+    <div class="detail-content">
+      <canvas id="detailCanvas" aria-label="Large interactive 3D product detail"></canvas>
+      <div class="detail-panel">
+        <p class="eyebrow"><span></span> Cinematic product reveal</p>
+        <h2 id="detailTitle">Aureon X1</h2>
+        <p id="detailDescription">Adaptive spatial headphones with brushed alloy and memory leather.</p>
+        <div class="detail-controls">
+          <button class="chip magnetic" id="explodeButton" type="button">Exploded view</button>
+          <button class="chip magnetic" id="materialButton" type="button">Switch material</button>
+          <button class="chip magnetic" id="colorButton" type="button">Morph color</button>
+        </div>
+        <ul id="detailSpecs"></ul>
       </div>
     </div>
   </div>
-</section>
 
-<section id="process">
-  <div class="section-head reveal">
-    <div class="section-tag">05 — Process</div>
-    <h2 class="section-title">How a project with me runs.</h2>
+  <div class="cart-toast" id="cartToast" aria-live="polite">
+    <span></span>
+    Product secured in your private cart.
   </div>
-  <div class="why-grid">
-    <div class="why-card reveal">
-      <div class="why-step">STEP 1</div>
-      <div class="why-title">Discovery call</div>
-      <div class="why-desc">We talk through your goals, audience, timeline, and budget before any code is written.</div>
-    </div>
-    <div class="why-card reveal">
-      <div class="why-step">STEP 2</div>
-      <div class="why-title">Design & plan</div>
-      <div class="why-desc">Wireframes and a clear scope so you know exactly what you're getting.</div>
-    </div>
-    <div class="why-card reveal">
-      <div class="why-step">STEP 3</div>
-      <div class="why-title">Build & review</div>
-      <div class="why-desc">Regular check-ins while I build, so feedback shapes the product early.</div>
-    </div>
-    <div class="why-card reveal">
-      <div class="why-step">STEP 4</div>
-      <div class="why-title">Launch & support</div>
-      <div class="why-desc">Deployment, a final walkthrough, and support after you go live.</div>
-    </div>
-  </div>
-</section>
 
-<section id="contact">
-  <h2 class="contact-title reveal">Got a project in mind? <span class="accent">Let's build it.</span></h2>
-  <p class="contact-sub reveal">Open to freelance projects, internships, and collaborations. Tell me what you're building — I'll reply within 24 hours.</p>
-  <div class="contact-actions reveal">
-    <a href="mailto:nomanasghar382@gmail.com?subject=Project%20Inquiry%20—%20Noman%20Asghar" class="btn btn-primary">Email me →</a>
-    <a href="assets/my resume photo.jpeg" rel="noopener" class="btn btn-resume">Professional Resume ↗</a>
-    <a href="https://wa.me/923183602715" target="_blank" rel="noopener" class="btn btn-ghost">WhatsApp</a>
-  </div>
-  <div class="social-row reveal">
-    <a href="https://www.linkedin.com/in/noman-asghar-a09606414/" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="https://github.com/nomanasghar382" target="_blank" rel="noopener">GitHub</a>
-    <a href="https://www.upwork.com/freelancers/~01ed0f671ba6f3fad7?mp_source=share" target="_blank" rel="noopener">Upwork</a>
-    <a href="https://www.fiverr.com/nomanasghar00" target="_blank" rel="noopener">Fiverr</a>
-  </div>
-</section>
-
-<footer>
-  © 2026 Noman Asghar — Full-Stack Web Developer. Built from scratch, no templates.
-</footer>
-
-<a href="#contact" class="float-hire" id="floatHire">💼 Hire me</a>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-<script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
